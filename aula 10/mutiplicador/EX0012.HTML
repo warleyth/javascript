@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<style>body{
+    background-color: #d6eadf;
+    color: rgb(0, 0, 0);
+}
+
+</style>
+<body>
+
+     
+    <h1>` Nacionalidade carai` </h1>
+    Pais onde mora <input type="text" name="paiss" id="paiss">
+    <input type="button" value="Pesquisar" onclick="Comparar()">
+
+    
+
+    <div id="res">
+
+    </div>
+    <script>
+        function Comparar() {
+            var txtv = window.document.getElementById(`paiss`)
+            var  res = window.document.getElementById (`res`)
+            var pai = (txtv.value)
+
+            res.innerText = `  voce mora no ${pai}  `
+            if (pai != `brasil`) {
+                res.innerHTML += (`voçê e estrangeiro sai fora de minhas terras`)
+            } else {
+                res.innerHTML += (' voçê e brasileiro parceiro pode ficar susegado')
+            }
+
+
+        }
+
+    </script>
+
+</body>
+</html>
